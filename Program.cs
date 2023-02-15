@@ -41,7 +41,7 @@ namespace costomname {
           static void mod(){
                Console.Write("Number:");
                int num = int.Parse(Console.ReadLine());
-               if (num %9 == 0){Console.WriteLine("not divisible");}
+               if (num %9 != 0){Console.WriteLine("not divisible");}
           }
      }
 }
