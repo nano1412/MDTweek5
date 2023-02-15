@@ -1,0 +1,9 @@
+explicit type (con)
+	type.Parse(x)
+convert from string to number viarbles
+
+condition
+if else
+switch case
+
+("{0:f2}",x);
