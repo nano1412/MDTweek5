@@ -7,7 +7,8 @@ namespace costomname {
                //iif();
                //twopositive();
                //mod();
-               ifelse();
+               //ifelse();
+               oddeven();
           }
           
           static void carinterest(){
@@ -55,6 +56,16 @@ namespace costomname {
                }
                else{
                     Console.WriteLine(num1*num2);
+               }
+          }
+          static void oddeven(){
+               Console.Write("Number:");
+               int num = int.Parse(Console.ReadLine());
+               if(num%2==0){
+                    Console.WriteLine("even");
+               }
+               else {
+                    Console.WriteLine("odd");
                }
           }
      }
