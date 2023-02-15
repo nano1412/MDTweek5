@@ -5,7 +5,8 @@ namespace costomname {
           static void Main(string[] args) {
                //carinterest();
                //ifelse();
-               twopositive();
+               //twopositive();
+               mod();
           }
           
           static void carinterest(){
@@ -32,9 +33,15 @@ namespace costomname {
                int num1 = int.Parse(Console.ReadLine());
                Console.Write("Number2:");
                int num2 = int.Parse(Console.ReadLine());
-               if(num1>0 && num2>0){
+               if(num1>0 || num2>0){
                     Console.WriteLine("positive");
                }
+          }
+
+          static void mod(){
+               Console.Write("Number:");
+               int num = int.Parse(Console.ReadLine());
+               if (num %9 == 0){Console.WriteLine("not divisible");}
           }
      }
 }
