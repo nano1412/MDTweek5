@@ -8,7 +8,8 @@ namespace costomname {
                //twopositive();
                //mod();
                //ifelse();
-               oddeven();
+               //oddeven();
+               elseifelse();
           }
           
           static void carinterest(){
@@ -67,6 +68,13 @@ namespace costomname {
                else {
                     Console.WriteLine("odd");
                }
+          }
+          static void elseifelse(){
+               Console.Write("score:");
+               int score = int.Parse(Console.ReadLine());
+               if (score > 80){Console.WriteLine("A");}
+               else if (score < 25){Console.WriteLine("F");}
+               else {Console.Write("P");}
           }
      }
 }
