@@ -4,9 +4,10 @@ namespace costomname {
      class Program {            
           static void Main(string[] args) {
                //carinterest();
-               //ifelse();
+               //iif();
                //twopositive();
-               mod();
+               //mod();
+               ifelse();
           }
           
           static void carinterest(){
@@ -23,7 +24,7 @@ namespace costomname {
                total = (car-down) + interest;
                Console.WriteLine("payment per month = {0} THB", total/12);
           }
-          static void ifelse(){
+          static void iif(){
                Console.Write("Number:");
                int num = int.Parse(Console.ReadLine());
                if (num > 0){Console.WriteLine("positive");}
@@ -41,7 +42,20 @@ namespace costomname {
           static void mod(){
                Console.Write("Number:");
                int num = int.Parse(Console.ReadLine());
-               if (num %9 == 0){Console.WriteLine("not divisible");}
+               if (num %9 != 0){Console.WriteLine("not divisible");}
+          }
+          static void ifelse(){
+               double num1,num2;
+               Console.Write("num1:");
+               num1 = double.Parse(Console.ReadLine());
+               Console.Write("num2:");
+               num2 = double.Parse(Console.ReadLine());
+               if(num2 > 0){
+                    Console.WriteLine(num1+num2);
+               }
+               else{
+                    Console.WriteLine(num1*num2);
+               }
           }
      }
 }
